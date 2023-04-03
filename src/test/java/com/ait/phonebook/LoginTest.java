@@ -45,4 +45,20 @@ public class LoginTest extends TestBase{
     Assert.assertTrue(isAlertPresent());
 
   }
+
+  @Test(priority=1)
+  public void loginRegisterUserNegativeWithInvalidEmailTest(){
+    //click on Login link
+    click(By.xpath("//a[contains(.,'LOGIN')]"));
+
+    //fill login form
+    type(By.cssSelector("[placeholder='Email']"), "val+1@gmail.com1");
+    type(By.cssSelector("[placeholder='Password']"), "Val123465$");
+
+    //click
+    click(By.name("login"));
+    //verify
+
+    Assert.assertTrue(isAlertPresent());
+  }
 }

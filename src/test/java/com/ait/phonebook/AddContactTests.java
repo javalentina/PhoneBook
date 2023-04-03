@@ -46,6 +46,21 @@ public class AddContactTests extends TestBase{
         click(By.cssSelector(".add_form__2rsm2 button"));
         Assert.assertTrue(isContactCreated("Jim"));
     }
+    @Test (priority=3)
+    public void addContactNegativeTest(){
+        int i = (int) (System.currentTimeMillis()/1000)%3600;
+        click(By.cssSelector("a:nth-child(5)"));
+
+        type(By.cssSelector("input:nth-child(1)"),"John" +i);
+        type(By.cssSelector("input:nth-child(2)"),"Ranger");
+        type(By.cssSelector("input:nth-child(3)"),"12345678900");
+        type(By.cssSelector("input:nth-child(4)"),"jigmail.co");
+        type(By.cssSelector("input:nth-child(5)"),"Berlin");
+        type(By.cssSelector("input:nth-child(6)"),"west");
+
+        click(By.cssSelector(".add_form__2rsm2 button"));
+        Assert.assertFalse(isContactCreated("John"));
+    }
 
     public boolean isContactCreated(String text){
         List<WebElement> contacts = driver.findElements(By.cssSelector("h2"));
