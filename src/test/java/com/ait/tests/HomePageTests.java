@@ -1,4 +1,4 @@
-package com.ait.phonebook;
+package com.ait.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

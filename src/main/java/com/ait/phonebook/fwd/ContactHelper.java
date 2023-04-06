@@ -1,5 +1,6 @@
-package com.ait.phonebook;
+package com.ait.phonebook.fwd;
 
+import com.ait.phonebook.model.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

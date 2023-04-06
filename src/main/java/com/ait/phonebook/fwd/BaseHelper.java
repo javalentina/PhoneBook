@@ -1,4 +1,4 @@
-package com.ait.phonebook;
+package com.ait.phonebook.fwd;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

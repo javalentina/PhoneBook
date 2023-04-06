@@ -1,4 +1,4 @@
-package com.ait.phonebook;
+package com.ait.phonebook.model;
 
 public class User{
     private String email;

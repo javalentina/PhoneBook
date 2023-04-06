@@ -1,5 +1,6 @@
-package com.ait.phonebook;
+package com.ait.tests;
 
+import com.ait.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

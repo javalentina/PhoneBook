@@ -1,4 +1,4 @@
-package com.ait.phonebook;
+package com.ait.phonebook.fwd;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,6 +33,7 @@ public class ApplicationManager {
         return header;
     }
     public void init() {
+        System.err.close();
         //open Chrome driver
         ChromeOptions options = new ChromeOptions();
         options.addArguments("remote-allow-origins=*");
