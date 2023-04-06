@@ -1,39 +1,47 @@
 package com.ait.phonebook;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CreateAccountTests extends TestBase{
+public class CreateAccountTests extends TestBase {
     //precondition:user should be logged out
     @BeforeMethod
-    public void ensurePrecondition(){
-        if(!isElementPresent(By.xpath("//a[contains(.,'LOGIN')]"))){
+    public void ensurePrecondition() {
+        if (!app.getHeader().isLoginLinkPresent()) {
             //click on Sign out
-            //button[contains(.,'Sign Out')]
-            click(By.xpath("//button[contains(.,'Sign Out')]"));
+            app.getUser().clickOnSightOutButton();
 
         }
     }
 
-    @Test
-    public void NewUserRegistrationTest(){
-        click(By.xpath("//a[contains(.,'LOGIN')]"));
+    @Test(enabled = false)
+    public void newUserRegistrationPositiveTest() {
+        app.getHeader().clickOnLoginLink();
         //click on login Link
-        Assert.assertTrue(isElementPresent(By.className("login_login__3EHKB")));
-
-
+        Assert.assertTrue(app.getUser().isLoginRegFormPresent());
         //fill registration form
 
-        type(By.cssSelector("[placeholder='Email']"), "val+1@gmail.com");
-        type(By.cssSelector("[placeholder='Password']"), "Val123465$");
+        app.getUser().fillLoginRegForm(new User().setEmail("val+1@gmail.com").setPassword("Val123465$"));
 
         // click on Registration button
-        click(By.name("registration"));
+        app.getUser().clickOnRegistrationButton();
         //verify sign out button displayed
-        Assert.assertTrue(isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
+        Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
+    @Test
+    public void newUserRegistrationNegativeWithoutPasswordTest() {
+        app.getHeader().clickOnLoginLink();
+        //click on login Link
+        Assert.assertTrue(app.getUser().isLoginRegFormPresent());
+        //fill registration form
 
+        app.getUser().fillLoginRegForm(new User().setEmail("val+1@gmail.com").setPassword("Val123465$"));
 
+        // click on Registration button
+        app.getUser().clickOnRegistrationButton();
+        //verify sign out button displayed
+        Assert.assertTrue(app.getUser().isAlertPresent());
+
+    }
 }

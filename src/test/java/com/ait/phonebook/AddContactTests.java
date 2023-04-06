@@ -1,12 +1,8 @@
 package com.ait.phonebook;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 public class AddContactTests extends TestBase{
 
@@ -21,54 +17,34 @@ public class AddContactTests extends TestBase{
     //check Contact is added
     @BeforeMethod
     public void ensurePrecondition(){
-        if(!isElementPresent(By.xpath("//a[contains(.,'Sign Out')]"))){
-            click(By.xpath("//a[contains(.,'LOGIN')]"));
+        if(!app.getUser().isSignOutButtonPresent()){
+            app.getHeader().clickOnLoginLink();
         }
 
-        type(By.cssSelector("[placeholder='Email']"), "val+1@gmail.com");
-        type(By.cssSelector("[placeholder='Password']"), "Val123465$");
+        app.getUser().fillLoginRegForm(new User().setEmail("val+1@gmail.com").setPassword("Val123465$"));
 
         // click on Registration button
-        click(By.name("login"));
+        app.getUser().clickOnLoginButton();
     }
     @Test (priority=3)
     public void addContactPositiveTest(){
        int i = (int) (System.currentTimeMillis()/1000)%3600;
-        click(By.cssSelector("a:nth-child(5)"));
+        app.getContact().clickOnAddLink();
+        app.getContact().addContact(new Contact().setName("Jim" + i).setSurName("Ranger").setPhone("12345678900").setEmail("ji@gmail.co").setAddress("Berlin").setDesc("west"));
 
-        type(By.cssSelector("input:nth-child(1)"),"Jim" +i);
-        type(By.cssSelector("input:nth-child(2)"),"Ranger");
-        type(By.cssSelector("input:nth-child(3)"),"12345678900");
-        type(By.cssSelector("input:nth-child(4)"),"ji@gmail.co");
-        type(By.cssSelector("input:nth-child(5)"),"Berlin");
-        type(By.cssSelector("input:nth-child(6)"),"west");
-
-        click(By.cssSelector(".add_form__2rsm2 button"));
-        Assert.assertTrue(isContactCreated("Jim"));
+        app.getContact().clickOnSaveButton();
+        Assert.assertTrue(app.getContact().isContactCreated("Jim"));
     }
+
     @Test (priority=3)
     public void addContactNegativeTest(){
         int i = (int) (System.currentTimeMillis()/1000)%3600;
-        click(By.cssSelector("a:nth-child(5)"));
+        app.getContact().clickOnAddLink();
 
-        type(By.cssSelector("input:nth-child(1)"),"John" +i);
-        type(By.cssSelector("input:nth-child(2)"),"Ranger");
-        type(By.cssSelector("input:nth-child(3)"),"12345678900");
-        type(By.cssSelector("input:nth-child(4)"),"jigmail.co");
-        type(By.cssSelector("input:nth-child(5)"),"Berlin");
-        type(By.cssSelector("input:nth-child(6)"),"west");
+        app.getContact().addContact(new Contact().setName("Jim" + i).setSurName("Ranger").setPhone("12345678900").setEmail("jigmail.co").setAddress("Berlin").setDesc("west"));
 
-        click(By.cssSelector(".add_form__2rsm2 button"));
-        Assert.assertFalse(isContactCreated("John"));
+        app.getContact().clickOnSaveButton();
+        Assert.assertFalse(app.getContact().isContactCreated("John"));
     }
 
-    public boolean isContactCreated(String text){
-        List<WebElement> contacts = driver.findElements(By.cssSelector("h2"));
-        for (WebElement el:contacts){
-            if(el.getText().contains(text))
-                return true;
-
-        }
-        return false;
-    }
 }
