@@ -1,5 +1,7 @@
 package com.ait.tests;
 
+import com.ait.phonebook.fwd.DataProviderContact;
+import com.ait.phonebook.fwd.DataProviderUser;
 import com.ait.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -48,6 +50,19 @@ public class LoginTest extends TestBase {
 
         //fill login form
         app.getUser().fillLoginRegForm(new User().setEmail("val+1@gmail.com1").setPassword("Val123465$"));
+        //click
+        app.getUser().clickOnLoginButton();
+        //verify
+        Assert.assertTrue(app.getUser().isAlertPresent());
+    }
+
+    @Test(dataProvider = "addUserFromCSV",dataProviderClass= DataProviderUser.class)
+    public void loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider(User user) {
+        //click on Login link
+        app.getHeader().clickOnLoginLink();
+
+        //fill login form with User class
+        app.getUser().fillLoginRegForm(user);
         //click
         app.getUser().clickOnLoginButton();
         //verify

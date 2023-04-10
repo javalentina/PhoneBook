@@ -15,6 +15,7 @@ gradlew/
 *.jar
 *.properties
 *.iml
+test_logs/*
 
 # Ignore Gradle GUI config
 gradle-app.setting
