@@ -1,0 +1,61 @@
+4555 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+5022 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+5520 [Test worker] INFO  com.ait.tests.TestBase -- Start testRemoveContactTestwith data: []
+10297 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  RemoveContactTest
+10298 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+10335 [AsyncHttpClient-1-4] WARN  o.a.netty.handler.WebSocketHandler -- onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+11969 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+12299 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+12808 [Test worker] INFO  com.ait.tests.TestBase -- Start testheaderTestElementwith data: []
+12826 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  headerTestElement
+12826 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+14434 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+14736 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+15227 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login1@gm.co', password='Pass3!word'}]
+16670 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+16670 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+18649 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+19001 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+19476 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login2@gm.co', password='password'}]
+20892 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+20892 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+22778 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+23101 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+23579 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login3@gm.co', password='Pass3!word1'}]
+24976 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+24976 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+26607 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+26972 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+27454 [Test worker] INFO  com.ait.tests.TestBase -- Start testnewUserRegistrationNegativeWithoutPasswordTestwith data: []
+28856 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  newUserRegistrationNegativeWithoutPasswordTest
+28856 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+30520 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+30930 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+31419 [Test worker] INFO  com.ait.tests.TestBase -- Start testopenHomePageTestwith data: []
+31434 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  openHomePageTest
+31435 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+33127 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+33444 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+33915 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestwith data: []
+35292 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTest
+35292 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+36925 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+37440 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+37918 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidPasswordTestwith data: []
+39301 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidPasswordTest
+39302 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================

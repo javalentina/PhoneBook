@@ -1,0 +1,45 @@
+7384 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+7802 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+8434 [Test worker] INFO  com.ait.tests.TestBase -- Start testRemoveContactTestwith data: []
+15737 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  RemoveContactTest
+15737 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+19123 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+19530 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+20131 [Test worker] INFO  com.ait.tests.TestBase -- Start testheaderTestElementwith data: []
+20148 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  headerTestElement
+20148 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+23509 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+23838 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+24447 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login1@gm.co', password='Pass3!word'}]
+26492 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+26493 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+29883 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+30220 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+30813 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login2@gm.co', password='password'}]
+32896 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+32896 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+36256 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+36653 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+37265 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login3@gm.co', password='Pass3!word1'}]
+39294 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+39295 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+42796 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+43224 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+43849 [Test worker] INFO  com.ait.tests.TestBase -- Start testnewUserRegistrationNegativeWithoutPasswordTestwith data: []
+45896 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  newUserRegistrationNegativeWithoutPasswordTest
+45897 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+49234 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+49533 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+50152 [Test worker] INFO  com.ait.tests.TestBase -- Start testopenHomePageTestwith data: []
+50165 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  openHomePageTest
+50165 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+53433 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+53773 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+54369 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestwith data: []
+56412 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTest
+56413 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+60807 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Firefox browser
+61137 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+61735 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidPasswordTestwith data: []
+63763 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidPasswordTest
+63763 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================

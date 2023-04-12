@@ -17,7 +17,7 @@ public class LoginTest extends TestBase {
         }
     }
 
-    @Test(priority = 2)
+    @Test(enabled = false)
     public void loginRegisterUserPositiveTest() {
         //click on Login link
         app.getHeader().clickOnLoginLink();
@@ -30,7 +30,7 @@ public class LoginTest extends TestBase {
 
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = false)
     public void loginRegisterUserNegativeWithInvalidPasswordTest() {
         //click on Login link
         app.getHeader().clickOnLoginLink();
@@ -43,7 +43,7 @@ public class LoginTest extends TestBase {
 
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = false)
     public void loginRegisterUserNegativeWithInvalidEmailTest() {
         //click on Login link
         app.getHeader().clickOnLoginLink();

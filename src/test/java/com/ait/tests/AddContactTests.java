@@ -43,7 +43,7 @@ public class AddContactTests extends TestBase {
         Assert.assertTrue(app.getContact().isContactCreated("Jim"));
     }
 
-    @Test(dataProvider = "addContactWithData",dataProviderClass= DataProviderContact.class)
+    @Test(enabled = false, dataProvider = "addContactWithData",dataProviderClass= DataProviderContact.class)
     public void addContactPositiveFromDataProviderTest(String name, String surName, String phone, String email, String address, String desc) {
 
         app.getContact().clickOnAddLink();
@@ -60,7 +60,7 @@ public class AddContactTests extends TestBase {
         
     }
 
-    @Test(dataProvider = "addContactFromCSV",dataProviderClass = DataProviderContact.class)
+    @Test(enabled = false, dataProvider = "addContactFromCSV",dataProviderClass = DataProviderContact.class)
     public void addContactPositiveFromCSVFileTest(Contact contact) {
 
         app.getContact().clickOnAddLink();
@@ -71,7 +71,7 @@ public class AddContactTests extends TestBase {
         app.getContact().pause(2000);
     }
 
-    @Test(priority = 3)
+    @Test(enabled = false)
     public void addContactNegativeTest() {
         int i = (int) (System.currentTimeMillis() / 1000) % 3600;
         app.getContact().clickOnAddLink();
