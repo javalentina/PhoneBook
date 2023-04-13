@@ -1,0 +1,51 @@
+3536 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+4010 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+4489 [Test worker] INFO  com.ait.tests.TestBase -- Start testnewUserRegistrationNegativeWithoutPasswordTestwith data: []
+6007 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  newUserRegistrationNegativeWithoutPasswordTest
+6007 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+6038 [AsyncHttpClient-1-4] WARN  o.a.netty.handler.WebSocketHandler -- onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+7585 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+8210 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+8706 [Test worker] INFO  com.ait.tests.TestBase -- Start testheaderTestElementwith data: []
+8730 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  headerTestElement
+8730 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+10377 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+10909 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+11440 [Test worker] INFO  com.ait.tests.TestBase -- Start testopenHomePageTestwith data: []
+11456 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  openHomePageTest
+11456 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+13892 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+14894 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+15363 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login1@gm.co', password='Pass3!word'}]
+16874 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+16874 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+18955 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+19338 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+19834 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login2@gm.co', password='password'}]
+21274 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+21274 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+22959 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+23388 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+23864 [Test worker] INFO  com.ait.tests.TestBase -- Start testloginRegisterUserNegativeWithInvalidEmailTestDataFromProviderwith data: [User{email='login3@gm.co', password='Pass3!word1'}]
+25253 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider
+25253 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================
+26847 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- All test  start in Chrome browser
+27482 [Test worker] INFO  c.a.p.fwd.ApplicationManager -- Current URL -->https://telranedu.web.app/home
+27957 [Test worker] INFO  com.ait.tests.TestBase -- Start testRemoveContactTestwith data: []
+32390 [Test worker] INFO  com.ait.tests.TestBase -- PASSED: test method  RemoveContactTest
+32390 [Test worker] INFO  com.ait.tests.TestBase -- ==============================================

@@ -1,6 +1,4 @@
 gradle/
-/build/
-
 setting.gradle
 
 !gradle-wrapper.jar

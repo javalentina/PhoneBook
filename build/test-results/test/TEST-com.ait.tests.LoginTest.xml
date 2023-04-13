@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.tests.LoginTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-13T08:53:42" hostname="MacBook-Pro-von-BerlinJohn.local" time="9.493">
+  <properties/>
+  <testcase name="loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider[0](User{email='login1@gm.co', password='Pass3!word'})" classname="com.ait.tests.LoginTest" time="1.417"/>
+  <testcase name="loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider[1](User{email='login2@gm.co', password='password'})" classname="com.ait.tests.LoginTest" time="1.408"/>
+  <testcase name="loginRegisterUserNegativeWithInvalidEmailTestDataFromProvider[2](User{email='login3@gm.co', password='Pass3!word1'})" classname="com.ait.tests.LoginTest" time="1.392"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 23390
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 13, 2023 10:53:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 110
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 17923
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 13, 2023 10:53:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 110
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 7870
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 13, 2023 10:53:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 110
+]]></system-err>
+</testsuite>
